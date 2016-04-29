@@ -113,7 +113,7 @@ def _parse_inherit(cls, inherits):
 
 
 def _check_arguments_dict(arguments):
-    for argument, info in arguments.iteritems():
+    for argument, info in arguments.items():
         if info['type_name'] is None:
             raise MethodParsingException(
                 'Can not get type for argument %s' % (argument))
